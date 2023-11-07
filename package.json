@@ -1,0 +1,44 @@
+{
+  "name": "node-red-contrib-simple-dalle3",
+  "version": "1.0.0",
+  "description": "DALL·E 3で画像生成を行うノードです。",
+  "main": "node.js",
+  "node-red": {
+    "version": ">=2.0.0",
+    "nodes": {
+      "simple-dalle3": "node.js"
+    }
+  },
+  "files": [
+    "node.js",
+    "node.html",
+    "examples/"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaomar/node-red-contrib-simple-dalle3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/gaomar/node-red-contrib-simple-dalle3/issues"
+  },
+  "keywords": [
+    "DALL·E3",
+    "openai",
+    "chatgpt",
+    "node-red"
+  ],
+  "directories": {
+    "example": "examples"
+  },
+  "author": "gaomar",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.16.1"
+  }
+}

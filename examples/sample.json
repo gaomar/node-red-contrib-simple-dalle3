@@ -1,0 +1,62 @@
+[
+  {
+      "id": "7c35e5d1cddb9c09",
+      "type": "inject",
+      "z": "e0e3e454efb53b1d",
+      "name": "",
+      "props": [
+          {
+              "p": "payload"
+          },
+          {
+              "p": "topic",
+              "vt": "str"
+          }
+      ],
+      "repeat": "",
+      "crontab": "",
+      "once": false,
+      "onceDelay": 0.1,
+      "topic": "",
+      "payload": "かわいい猫の画像",
+      "payloadType": "str",
+      "x": 150,
+      "y": 200,
+      "wires": [
+          [
+              "29e528223dd0d5d5"
+          ]
+      ]
+  },
+  {
+      "id": "29e528223dd0d5d5",
+      "type": "simple-dalle3",
+      "z": "e0e3e454efb53b1d",
+      "name": "",
+      "Token": "",
+      "output": "url",
+      "x": 360,
+      "y": 200,
+      "wires": [
+          [
+              "55700651e80a2379"
+          ]
+      ]
+  },
+  {
+      "id": "55700651e80a2379",
+      "type": "debug",
+      "z": "e0e3e454efb53b1d",
+      "name": "debug",
+      "active": true,
+      "tosidebar": true,
+      "console": false,
+      "tostatus": false,
+      "complete": "false",
+      "statusVal": "",
+      "statusType": "auto",
+      "x": 540,
+      "y": 200,
+      "wires": []
+  }
+]
